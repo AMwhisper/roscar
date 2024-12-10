@@ -1,0 +1,2 @@
+Invoking command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces -- -j6 -l6
+Invoked command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces -- -j6 -l6
