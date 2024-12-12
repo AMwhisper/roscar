@@ -3,8 +3,12 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/roscar_interfaces/msg/__init__.py"
+  "../rosidl_generator_py/roscar_interfaces/msg/_can.py"
+  "../rosidl_generator_py/roscar_interfaces/msg/_can_s.c"
   "../rosidl_generator_py/roscar_interfaces/msg/_controller.py"
   "../rosidl_generator_py/roscar_interfaces/msg/_controller_s.c"
+  "../rosidl_generator_py/roscar_interfaces/msg/_pid.py"
+  "../rosidl_generator_py/roscar_interfaces/msg/_pid_s.c"
   "CMakeFiles/roscar_interfaces__py"
 )
 

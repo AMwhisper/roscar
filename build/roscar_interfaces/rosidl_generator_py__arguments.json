@@ -3,7 +3,9 @@
   "output_dir": "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_generator_py/roscar_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Controller.idl"
+    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Controller.idl",
+    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Can.idl",
+    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Pid.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -82,6 +84,8 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces/msg/Controller.idl",
+    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces/msg/Can.idl",
+    "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces/msg/Pid.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

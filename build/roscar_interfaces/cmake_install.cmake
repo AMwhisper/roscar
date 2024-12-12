@@ -360,7 +360,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roscar_interfaces/msg" TYPE FILE FILES "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces/msg/Can.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roscar_interfaces/msg" TYPE FILE FILES "/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces/msg/Pid.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roscar_interfaces/msg" TYPE FILE FILES "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Controller.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roscar_interfaces/msg" TYPE FILE FILES "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Can.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roscar_interfaces/msg" TYPE FILE FILES "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Pid.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

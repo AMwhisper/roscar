@@ -1,1 +1,3 @@
 /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Controller.idl
+/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Can.idl
+/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces/rosidl_adapter/roscar_interfaces:msg/Pid.idl

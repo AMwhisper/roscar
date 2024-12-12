@@ -67,6 +67,8 @@ include CMakeFiles/roscar_interfaces.dir/compiler_depend.make
 include CMakeFiles/roscar_interfaces.dir/progress.make
 
 CMakeFiles/roscar_interfaces: /home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Controller.msg
+CMakeFiles/roscar_interfaces: /home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Can.msg
+CMakeFiles/roscar_interfaces: /home/amwhisper/ros/workspace/roscar/src/roscar_interfaces/msg/Pid.msg
 CMakeFiles/roscar_interfaces: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/roscar_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/roscar_interfaces: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

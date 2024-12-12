@@ -1,0 +1,299 @@
+[0.090s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.091s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7593753dc790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7593755adf00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7593755adf00>>)
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.211s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/amwhisper/ros/workspace/roscar'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extension 'ignore_ament_install'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extensions ['colcon_pkg']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extension 'colcon_pkg'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extensions ['colcon_meta']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extension 'colcon_meta'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extensions ['ros']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/can_control) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/can_control' with type 'ros.ament_python' and name 'can_control'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/car_task) by extension 'ros'
+[0.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/car_task' with type 'ros.ament_python' and name 'car_task'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/roscar_interfaces) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/roscar_interfaces' with type 'ros.ament_cmake' and name 'roscar_interfaces'
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/amwhisper/ros/workspace/roscar/install
+[0.248s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'roscar_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'roscar_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces', 'merge_install': False, 'path': '/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'can_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'can_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amwhisper/ros/workspace/roscar/build/can_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amwhisper/ros/workspace/roscar/install/can_control', 'merge_install': False, 'path': '/home/amwhisper/ros/workspace/roscar/src/can_control', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'car_task' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'car_task' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amwhisper/ros/workspace/roscar/build/car_task', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amwhisper/ros/workspace/roscar/install/car_task', 'merge_install': False, 'path': '/home/amwhisper/ros/workspace/roscar/src/car_task', 'symlink_install': False, 'test_result_base': None}
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.286s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/amwhisper/ros/workspace/roscar/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/amwhisper/ros/workspace/roscar/install/controller', 'merge_install': False, 'path': '/home/amwhisper/ros/workspace/roscar/src/controller', 'symlink_install': False, 'test_result_base': None}
+[0.286s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.287s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.288s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces' with build type 'ament_cmake'
+[0.288s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces'
+[0.289s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amwhisper/ros/workspace/roscar/install/controller:/home/amwhisper/ros/workspace/roscar/install/car_task:/home/amwhisper/ros/workspace/roscar/install/can_control:/opt/ros/humble /usr/bin/cmake --build /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces -- -j6 -l6
+[0.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amwhisper/ros/workspace/roscar/install/controller:/home/amwhisper/ros/workspace/roscar/install/car_task:/home/amwhisper/ros/workspace/roscar/install/can_control:/opt/ros/humble /usr/bin/cmake --build /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces -- -j6 -l6
+[0.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amwhisper/ros/workspace/roscar/install/controller:/home/amwhisper/ros/workspace/roscar/install/car_task:/home/amwhisper/ros/workspace/roscar/install/can_control:/opt/ros/humble /usr/bin/cmake --install /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces
+[0.896s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roscar_interfaces)
+[0.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amwhisper/ros/workspace/roscar/build/roscar_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amwhisper/ros/workspace/roscar/install/controller:/home/amwhisper/ros/workspace/roscar/install/car_task:/home/amwhisper/ros/workspace/roscar/install/can_control:/opt/ros/humble /usr/bin/cmake --install /home/amwhisper/ros/workspace/roscar/build/roscar_interfaces
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces' for CMake module files
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces' for CMake config files
+[0.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscar_interfaces', 'cmake_prefix_path')
+[0.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.ps1'
+[0.901s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.dsv'
+[0.902s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.sh'
+[0.903s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib'
+[0.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscar_interfaces', 'ld_library_path_lib')
+[0.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.ps1'
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.dsv'
+[0.905s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.sh'
+[0.905s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/bin'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/pkgconfig/roscar_interfaces.pc'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/python3.10/site-packages'
+[0.906s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/bin'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.ps1'
+[0.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.dsv'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.sh'
+[0.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.bash'
+[0.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.zsh'
+[0.910s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/colcon-core/packages/roscar_interfaces)
+[1.088s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(roscar_interfaces)
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces' for CMake module files
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces' for CMake config files
+[1.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscar_interfaces', 'cmake_prefix_path')
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.dsv'
+[1.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/cmake_prefix_path.sh'
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib'
+[1.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('roscar_interfaces', 'ld_library_path_lib')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.ps1'
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.dsv'
+[1.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/hook/ld_library_path_lib.sh'
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/bin'
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/pkgconfig/roscar_interfaces.pc'
+[1.094s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/python3.10/site-packages'
+[1.094s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/bin'
+[1.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.ps1'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.dsv'
+[1.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.sh'
+[1.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.bash'
+[1.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.zsh'
+[1.097s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/colcon-core/packages/roscar_interfaces)
+[1.097s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/amwhisper/ros/workspace/roscar/src/can_control' with build type 'ament_python'
+[1.097s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_control', 'ament_prefix_path')
+[1.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/ament_prefix_path.ps1'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/ament_prefix_path.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/ament_prefix_path.sh'
+[1.100s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.100s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.104s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/amwhisper/ros/workspace/roscar/src/car_task' with build type 'ament_python'
+[1.104s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_task', 'ament_prefix_path')
+[1.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/ament_prefix_path.ps1'
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/ament_prefix_path.dsv'
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/ament_prefix_path.sh'
+[1.106s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.106s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.111s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/amwhisper/ros/workspace/roscar/src/controller' with build type 'ament_python'
+[1.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[1.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/ament_prefix_path.sh'
+[1.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.329s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/amwhisper/ros/workspace/roscar/src/can_control'
+[1.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.532s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/amwhisper/ros/workspace/roscar/src/car_task'
+[1.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.748s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/amwhisper/ros/workspace/roscar/src/controller'
+[1.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.749s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amwhisper/ros/workspace/roscar/src/controller': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/amwhisper/ros/workspace/roscar/build/controller/build install --record /home/amwhisper/ros/workspace/roscar/build/controller/install.log --single-version-externally-managed install_data
+[2.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amwhisper/ros/workspace/roscar/src/can_control': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/can_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/can_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/can_control build --build-base /home/amwhisper/ros/workspace/roscar/build/can_control/build install --record /home/amwhisper/ros/workspace/roscar/build/can_control/install.log --single-version-externally-managed install_data
+[2.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/amwhisper/ros/workspace/roscar/src/car_task': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/car_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_task build --build-base /home/amwhisper/ros/workspace/roscar/build/car_task/build install --record /home/amwhisper/ros/workspace/roscar/build/car_task/install.log --single-version-externally-managed install_data
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller' for CMake module files
+[2.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amwhisper/ros/workspace/roscar/src/controller' returned '0': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/amwhisper/ros/workspace/roscar/build/controller/build install --record /home/amwhisper/ros/workspace/roscar/build/controller/install.log --single-version-externally-managed install_data
+[2.245s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller' for CMake config files
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller/lib'
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller/bin'
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller/lib/pkgconfig/controller.pc'
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller/lib/python3.10/site-packages'
+[2.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[2.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/pythonpath.ps1'
+[2.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/pythonpath.dsv'
+[2.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/hook/pythonpath.sh'
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/controller/bin'
+[2.248s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[2.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/package.ps1'
+[2.249s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/package.dsv'
+[2.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/package.sh'
+[2.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/package.bash'
+[2.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/controller/share/controller/package.zsh'
+[2.252s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amwhisper/ros/workspace/roscar/install/controller/share/colcon-core/packages/controller)
+[2.253s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task' for CMake module files
+[2.254s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task' for CMake config files
+[2.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amwhisper/ros/workspace/roscar/src/car_task' returned '0': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/car_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_task build --build-base /home/amwhisper/ros/workspace/roscar/build/car_task/build install --record /home/amwhisper/ros/workspace/roscar/build/car_task/install.log --single-version-externally-managed install_data
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task/lib'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task/bin'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task/lib/pkgconfig/car_task.pc'
+[2.255s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages'
+[2.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('car_task', 'pythonpath')
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/pythonpath.ps1'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/pythonpath.dsv'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/hook/pythonpath.sh'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/car_task/bin'
+[2.257s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(car_task)
+[2.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.ps1'
+[2.258s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.dsv'
+[2.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.sh'
+[2.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.bash'
+[2.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.zsh'
+[2.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amwhisper/ros/workspace/roscar/install/car_task/share/colcon-core/packages/car_task)
+[2.264s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control' for CMake module files
+[2.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/amwhisper/ros/workspace/roscar/src/can_control' returned '0': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/can_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/can_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/can_control build --build-base /home/amwhisper/ros/workspace/roscar/build/can_control/build install --record /home/amwhisper/ros/workspace/roscar/build/can_control/install.log --single-version-externally-managed install_data
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control' for CMake config files
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control/lib'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control/bin'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control/lib/pkgconfig/can_control.pc'
+[2.265s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control/lib/python3.10/site-packages'
+[2.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_control', 'pythonpath')
+[2.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/pythonpath.ps1'
+[2.267s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/pythonpath.dsv'
+[2.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/hook/pythonpath.sh'
+[2.268s] Level 1:colcon.colcon_core.environment:checking '/home/amwhisper/ros/workspace/roscar/install/can_control/bin'
+[2.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_control)
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/package.ps1'
+[2.270s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/package.dsv'
+[2.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/package.sh'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/package.bash'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/amwhisper/ros/workspace/roscar/install/can_control/share/can_control/package.zsh'
+[2.274s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/amwhisper/ros/workspace/roscar/install/can_control/share/colcon-core/packages/can_control)
+[2.274s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.275s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.281s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.281s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.281s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.294s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amwhisper/ros/workspace/roscar/install/local_setup.ps1'
+[2.296s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/amwhisper/ros/workspace/roscar/install/_local_setup_util_ps1.py'
+[2.297s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amwhisper/ros/workspace/roscar/install/setup.ps1'
+[2.298s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amwhisper/ros/workspace/roscar/install/local_setup.sh'
+[2.299s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/amwhisper/ros/workspace/roscar/install/_local_setup_util_sh.py'
+[2.300s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amwhisper/ros/workspace/roscar/install/setup.sh'
+[2.301s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amwhisper/ros/workspace/roscar/install/local_setup.bash'
+[2.301s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amwhisper/ros/workspace/roscar/install/setup.bash'
+[2.302s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/amwhisper/ros/workspace/roscar/install/local_setup.zsh'
+[2.303s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/amwhisper/ros/workspace/roscar/install/setup.zsh'

@@ -1,3 +1,3 @@
 [console_scripts]
-
+chassis_node = car_task.chassis:main
 

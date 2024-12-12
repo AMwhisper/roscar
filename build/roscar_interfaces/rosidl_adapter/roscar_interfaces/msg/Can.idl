@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roscar_interfaces/msg/Can.msg
+// generated code does not contain a copyright notice
+
+
+module roscar_interfaces {
+  module msg {
+    struct Can {
+      sequence<float> can;
+    };
+  };
+};

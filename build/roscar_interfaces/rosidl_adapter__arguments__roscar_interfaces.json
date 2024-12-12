@@ -1,6 +1,8 @@
 {
   "package_name": "roscar_interfaces",
   "non_idl_tuples": [
-    "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces:msg/Controller.msg"
+    "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces:msg/Controller.msg",
+    "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces:msg/Can.msg",
+    "/home/amwhisper/ros/workspace/roscar/src/roscar_interfaces:msg/Pid.msg"
   ]
 }

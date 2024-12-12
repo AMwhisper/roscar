@@ -1,2 +1,6 @@
+msg/Can.idl
+msg/Can.msg
 msg/Controller.idl
 msg/Controller.msg
+msg/Pid.idl
+msg/Pid.msg

@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from roscar_interfaces/msg/Pid.msg
+// generated code does not contain a copyright notice
+
+
+module roscar_interfaces {
+  module msg {
+    struct Pid {
+      sequence<float> pid;
+    };
+  };
+};

@@ -70,6 +70,14 @@ CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/co
 CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__builder.hpp
 CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__struct.hpp
 CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__traits.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/can.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__builder.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__struct.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__traits.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/pid.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__builder.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__struct.hpp
+CMakeFiles/roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__traits.hpp
 
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +95,8 @@ rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: rosidl_adapter/roscar_interfaces/msg/Controller.idl
+rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: rosidl_adapter/roscar_interfaces/msg/Can.idl
+rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: rosidl_adapter/roscar_interfaces/msg/Pid.idl
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -159,11 +169,43 @@ rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__struct.hpp: rosidl
 rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__traits.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__traits.hpp
 
+rosidl_generator_cpp/roscar_interfaces/msg/can.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/can.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/can__builder.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/can__builder.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/can__struct.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/can__struct.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/can__traits.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/can__traits.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/pid.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/pid.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__builder.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__builder.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__struct.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__struct.hpp
+
+rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__traits.hpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__traits.hpp
+
 roscar_interfaces__cpp: CMakeFiles/roscar_interfaces__cpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/can.hpp
 roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/controller.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__builder.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__struct.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/can__traits.hpp
 roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__builder.hpp
 roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__struct.hpp
 roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/controller__traits.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__builder.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__struct.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/detail/pid__traits.hpp
+roscar_interfaces__cpp: rosidl_generator_cpp/roscar_interfaces/msg/pid.hpp
 roscar_interfaces__cpp: CMakeFiles/roscar_interfaces__cpp.dir/build.make
 .PHONY : roscar_interfaces__cpp
 

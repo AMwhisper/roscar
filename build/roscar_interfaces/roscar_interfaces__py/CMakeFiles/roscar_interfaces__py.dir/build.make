@@ -70,8 +70,12 @@ roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/rosc
 roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_c.c
 roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_controller.py
+roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_can.py
+roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_pid.py
 roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/__init__.py
 roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_controller_s.c
+roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_can_s.c
+roscar_interfaces__py/CMakeFiles/roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_pid_s.c
 
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +91,8 @@ rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/roscar_interfaces/msg/Controller.idl
+rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/roscar_interfaces/msg/Can.idl
+rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/roscar_interfaces/msg/Pid.idl
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -159,19 +165,35 @@ rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport
 rosidl_generator_py/roscar_interfaces/msg/_controller.py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_controller.py
 
+rosidl_generator_py/roscar_interfaces/msg/_can.py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_can.py
+
+rosidl_generator_py/roscar_interfaces/msg/_pid.py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_pid.py
+
 rosidl_generator_py/roscar_interfaces/msg/__init__.py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/__init__.py
 
 rosidl_generator_py/roscar_interfaces/msg/_controller_s.c: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_controller_s.c
 
+rosidl_generator_py/roscar_interfaces/msg/_can_s.c: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_can_s.c
+
+rosidl_generator_py/roscar_interfaces/msg/_pid_s.c: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/roscar_interfaces/msg/_pid_s.c
+
 roscar_interfaces__py: roscar_interfaces__py/CMakeFiles/roscar_interfaces__py
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_c.c
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/__init__.py
+roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_can.py
+roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_can_s.c
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_controller.py
 roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_controller_s.c
+roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_pid.py
+roscar_interfaces__py: rosidl_generator_py/roscar_interfaces/msg/_pid_s.c
 roscar_interfaces__py: roscar_interfaces__py/CMakeFiles/roscar_interfaces__py.dir/build.make
 .PHONY : roscar_interfaces__py
 
