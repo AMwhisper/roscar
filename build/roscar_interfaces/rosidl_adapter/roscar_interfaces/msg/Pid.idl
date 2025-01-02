@@ -6,7 +6,9 @@
 module roscar_interfaces {
   module msg {
     struct Pid {
-      sequence<float> pid;
+      sequence<float> chassis_pid;
+
+      sequence<float> gimbal_pid;
     };
   };
 };

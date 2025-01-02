@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
-class Init_Pid_pid
+class Init_Pid_gimbal_pid
 {
 public:
-  Init_Pid_pid()
+  explicit Init_Pid_gimbal_pid(::roscar_interfaces::msg::Pid & msg)
+  : msg_(msg)
+  {}
+  ::roscar_interfaces::msg::Pid gimbal_pid(::roscar_interfaces::msg::Pid::_gimbal_pid_type arg)
+  {
+    msg_.gimbal_pid = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::roscar_interfaces::msg::Pid msg_;
+};
+
+class Init_Pid_chassis_pid
+{
+public:
+  Init_Pid_chassis_pid()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::roscar_interfaces::msg::Pid pid(::roscar_interfaces::msg::Pid::_pid_type arg)
+  Init_Pid_gimbal_pid chassis_pid(::roscar_interfaces::msg::Pid::_chassis_pid_type arg)
   {
-    msg_.pid = std::move(arg);
-    return std::move(msg_);
+    msg_.chassis_pid = std::move(arg);
+    return Init_Pid_gimbal_pid(msg_);
   }
 
 private:
@@ -48,7 +64,7 @@ template<>
 inline
 auto build<::roscar_interfaces::msg::Pid>()
 {
-  return roscar_interfaces::msg::builder::Init_Pid_pid();
+  return roscar_interfaces::msg::builder::Init_Pid_chassis_pid();
 }
 
 }  // namespace roscar_interfaces

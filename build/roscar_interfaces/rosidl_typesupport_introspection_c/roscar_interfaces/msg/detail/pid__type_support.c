@@ -13,7 +13,8 @@
 
 
 // Include directives for member types
-// Member `pid`
+// Member `chassis_pid`
+// Member `gimbal_pid`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
@@ -35,7 +36,7 @@ void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_fini_f
   roscar_interfaces__msg__Pid__fini(message_memory);
 }
 
-size_t roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__pid(
+size_t roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__chassis_pid(
   const void * untyped_member)
 {
   const rosidl_runtime_c__float__Sequence * member =
@@ -43,7 +44,7 @@ size_t roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_fun
   return member->size;
 }
 
-const void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__pid(
+const void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__chassis_pid(
   const void * untyped_member, size_t index)
 {
   const rosidl_runtime_c__float__Sequence * member =
@@ -51,7 +52,7 @@ const void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__ge
   return &member->data[index];
 }
 
-void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__pid(
+void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__chassis_pid(
   void * untyped_member, size_t index)
 {
   rosidl_runtime_c__float__Sequence * member =
@@ -59,29 +60,29 @@ void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_func
   return &member->data[index];
 }
 
-void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__pid(
+void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__chassis_pid(
   const void * untyped_member, size_t index, void * untyped_value)
 {
   const float * item =
     ((const float *)
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__pid(untyped_member, index));
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__chassis_pid(untyped_member, index));
   float * value =
     (float *)(untyped_value);
   *value = *item;
 }
 
-void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__pid(
+void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__chassis_pid(
   void * untyped_member, size_t index, const void * untyped_value)
 {
   float * item =
     ((float *)
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__pid(untyped_member, index));
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__chassis_pid(untyped_member, index));
   const float * value =
     (const float *)(untyped_value);
   *item = *value;
 }
 
-bool roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__pid(
+bool roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__chassis_pid(
   void * untyped_member, size_t size)
 {
   rosidl_runtime_c__float__Sequence * member =
@@ -90,30 +91,102 @@ bool roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_fun
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_message_member_array[1] = {
+size_t roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__gimbal_pid(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__gimbal_pid(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__float__Sequence * member =
+    (const rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__gimbal_pid(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__gimbal_pid(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const float * item =
+    ((const float *)
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__gimbal_pid(untyped_member, index));
+  float * value =
+    (float *)(untyped_value);
+  *value = *item;
+}
+
+void roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__gimbal_pid(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  float * item =
+    ((float *)
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__gimbal_pid(untyped_member, index));
+  const float * value =
+    (const float *)(untyped_value);
+  *item = *value;
+}
+
+bool roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__gimbal_pid(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__float__Sequence * member =
+    (rosidl_runtime_c__float__Sequence *)(untyped_member);
+  rosidl_runtime_c__float__Sequence__fini(member);
+  return rosidl_runtime_c__float__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_message_member_array[2] = {
   {
-    "pid",  // name
+    "chassis_pid",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(roscar_interfaces__msg__Pid, pid),  // bytes offset in struct
+    offsetof(roscar_interfaces__msg__Pid, chassis_pid),  // bytes offset in struct
     NULL,  // default value
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__pid,  // size() function pointer
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__pid,  // get_const(index) function pointer
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__pid,  // get(index) function pointer
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__pid,  // fetch(index, &value) function pointer
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__pid,  // assign(index, value) function pointer
-    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__pid  // resize(index) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__chassis_pid,  // size() function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__chassis_pid,  // get_const(index) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__chassis_pid,  // get(index) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__chassis_pid,  // fetch(index, &value) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__chassis_pid,  // assign(index, value) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__chassis_pid  // resize(index) function pointer
+  },
+  {
+    "gimbal_pid",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(roscar_interfaces__msg__Pid, gimbal_pid),  // bytes offset in struct
+    NULL,  // default value
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__size_function__Pid__gimbal_pid,  // size() function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_const_function__Pid__gimbal_pid,  // get_const(index) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__get_function__Pid__gimbal_pid,  // get(index) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__fetch_function__Pid__gimbal_pid,  // fetch(index, &value) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__assign_function__Pid__gimbal_pid,  // assign(index, value) function pointer
+    roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__resize_function__Pid__gimbal_pid  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_message_members = {
   "roscar_interfaces__msg",  // message namespace
   "Pid",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(roscar_interfaces__msg__Pid),
   roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_message_member_array,  // message members
   roscar_interfaces__msg__Pid__rosidl_typesupport_introspection_c__Pid_init_function,  // function to initialize message memory (memory has to be allocated)

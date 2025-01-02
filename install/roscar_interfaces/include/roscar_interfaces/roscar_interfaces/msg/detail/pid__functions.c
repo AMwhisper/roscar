@@ -12,7 +12,8 @@
 
 
 // Include directives for member types
-// Member `pid`
+// Member `chassis_pid`
+// Member `gimbal_pid`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -21,8 +22,13 @@ roscar_interfaces__msg__Pid__init(roscar_interfaces__msg__Pid * msg)
   if (!msg) {
     return false;
   }
-  // pid
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->pid, 0)) {
+  // chassis_pid
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->chassis_pid, 0)) {
+    roscar_interfaces__msg__Pid__fini(msg);
+    return false;
+  }
+  // gimbal_pid
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->gimbal_pid, 0)) {
     roscar_interfaces__msg__Pid__fini(msg);
     return false;
   }
@@ -35,8 +41,10 @@ roscar_interfaces__msg__Pid__fini(roscar_interfaces__msg__Pid * msg)
   if (!msg) {
     return;
   }
-  // pid
-  rosidl_runtime_c__float__Sequence__fini(&msg->pid);
+  // chassis_pid
+  rosidl_runtime_c__float__Sequence__fini(&msg->chassis_pid);
+  // gimbal_pid
+  rosidl_runtime_c__float__Sequence__fini(&msg->gimbal_pid);
 }
 
 bool
@@ -45,9 +53,15 @@ roscar_interfaces__msg__Pid__are_equal(const roscar_interfaces__msg__Pid * lhs, 
   if (!lhs || !rhs) {
     return false;
   }
-  // pid
+  // chassis_pid
   if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->pid), &(rhs->pid)))
+      &(lhs->chassis_pid), &(rhs->chassis_pid)))
+  {
+    return false;
+  }
+  // gimbal_pid
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->gimbal_pid), &(rhs->gimbal_pid)))
   {
     return false;
   }
@@ -62,9 +76,15 @@ roscar_interfaces__msg__Pid__copy(
   if (!input || !output) {
     return false;
   }
-  // pid
+  // chassis_pid
   if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->pid), &(output->pid)))
+      &(input->chassis_pid), &(output->chassis_pid)))
+  {
+    return false;
+  }
+  // gimbal_pid
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->gimbal_pid), &(output->gimbal_pid)))
   {
     return false;
   }

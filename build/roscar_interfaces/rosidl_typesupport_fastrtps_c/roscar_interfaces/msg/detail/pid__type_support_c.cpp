@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // pid
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // pid
+#include "rosidl_runtime_c/primitives_sequence.h"  // chassis_pid, gimbal_pid
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // chassis_pid, gimbal_pid
 
 // forward declare type support functions
 
@@ -51,10 +51,18 @@ static bool _Pid__cdr_serialize(
     return false;
   }
   const _Pid__ros_msg_type * ros_message = static_cast<const _Pid__ros_msg_type *>(untyped_ros_message);
-  // Field name: pid
+  // Field name: chassis_pid
   {
-    size_t size = ros_message->pid.size;
-    auto array_ptr = ros_message->pid.data;
+    size_t size = ros_message->chassis_pid.size;
+    auto array_ptr = ros_message->chassis_pid.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: gimbal_pid
+  {
+    size_t size = ros_message->gimbal_pid.size;
+    auto array_ptr = ros_message->gimbal_pid.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serializeArray(array_ptr, size);
   }
@@ -71,19 +79,35 @@ static bool _Pid__cdr_deserialize(
     return false;
   }
   _Pid__ros_msg_type * ros_message = static_cast<_Pid__ros_msg_type *>(untyped_ros_message);
-  // Field name: pid
+  // Field name: chassis_pid
   {
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->pid.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->pid);
+    if (ros_message->chassis_pid.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->chassis_pid);
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->pid, size)) {
-      fprintf(stderr, "failed to create array for field 'pid'");
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->chassis_pid, size)) {
+      fprintf(stderr, "failed to create array for field 'chassis_pid'");
       return false;
     }
-    auto array_ptr = ros_message->pid.data;
+    auto array_ptr = ros_message->chassis_pid.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: gimbal_pid
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->gimbal_pid.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->gimbal_pid);
+    }
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->gimbal_pid, size)) {
+      fprintf(stderr, "failed to create array for field 'gimbal_pid'");
+      return false;
+    }
+    auto array_ptr = ros_message->gimbal_pid.data;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -104,10 +128,21 @@ size_t get_serialized_size_roscar_interfaces__msg__Pid(
   (void)padding;
   (void)wchar_size;
 
-  // field.name pid
+  // field.name chassis_pid
   {
-    size_t array_size = ros_message->pid.size;
-    auto array_ptr = ros_message->pid.data;
+    size_t array_size = ros_message->chassis_pid.size;
+    auto array_ptr = ros_message->chassis_pid.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name gimbal_pid
+  {
+    size_t array_size = ros_message->gimbal_pid.size;
+    auto array_ptr = ros_message->gimbal_pid.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -144,7 +179,19 @@ size_t max_serialized_size_roscar_interfaces__msg__Pid(
   full_bounded = true;
   is_plain = true;
 
-  // member: pid
+  // member: chassis_pid
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: gimbal_pid
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -165,7 +212,7 @@ size_t max_serialized_size_roscar_interfaces__msg__Pid(
     using DataType = roscar_interfaces__msg__Pid;
     is_plain =
       (
-      offsetof(DataType, pid) +
+      offsetof(DataType, gimbal_pid) +
       last_member_size
       ) == ret_val;
   }

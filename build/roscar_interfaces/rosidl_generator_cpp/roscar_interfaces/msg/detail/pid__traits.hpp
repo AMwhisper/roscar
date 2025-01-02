@@ -25,14 +25,32 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: pid
+  // member: chassis_pid
   {
-    if (msg.pid.size() == 0) {
-      out << "pid: []";
+    if (msg.chassis_pid.size() == 0) {
+      out << "chassis_pid: []";
     } else {
-      out << "pid: [";
-      size_t pending_items = msg.pid.size();
-      for (auto item : msg.pid) {
+      out << "chassis_pid: [";
+      size_t pending_items = msg.chassis_pid.size();
+      for (auto item : msg.chassis_pid) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: gimbal_pid
+  {
+    if (msg.gimbal_pid.size() == 0) {
+      out << "gimbal_pid: []";
+    } else {
+      out << "gimbal_pid: [";
+      size_t pending_items = msg.gimbal_pid.size();
+      for (auto item : msg.gimbal_pid) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -48,16 +66,36 @@ inline void to_block_style_yaml(
   const Pid & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: pid
+  // member: chassis_pid
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.pid.size() == 0) {
-      out << "pid: []\n";
+    if (msg.chassis_pid.size() == 0) {
+      out << "chassis_pid: []\n";
     } else {
-      out << "pid:\n";
-      for (auto item : msg.pid) {
+      out << "chassis_pid:\n";
+      for (auto item : msg.chassis_pid) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: gimbal_pid
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.gimbal_pid.size() == 0) {
+      out << "gimbal_pid: []\n";
+    } else {
+      out << "gimbal_pid:\n";
+      for (auto item : msg.gimbal_pid) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }

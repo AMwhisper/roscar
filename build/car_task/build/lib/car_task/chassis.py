@@ -7,10 +7,16 @@ from roscar_interfaces.msg import Controller, Can, Pid
 class ChassisController(Node):
     def __init__(self):
         
+        self.pid_controllers = [
+            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 左前电机
+            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 左后电机
+            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 右后电机
+            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 右前电机
+        ]
         self.outputs = []
         self.control_mode = 1  
         self.controller_data = {'lx': 0, 'ly': 0, 'r2': 0, 'l2': 0, 'x': 0}
-        self.can_data = {'can': 0}
+        self.can_data = {'can': [0] * len(self.pid_controllers)}
         
         self.vx = 0.0
         self.vy = 0.0
@@ -40,14 +46,6 @@ class ChassisController(Node):
             10
         )      
         
-
-        self.pid_controllers = [
-            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 左前电机
-            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 左后电机
-            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 右后电机
-            PIDController(kp=20, ki=0, kd=0, max_output=6000, max_output_i=1200),  # 右前电机
-        ]
-        
         self.timer = self.create_timer(0.02, self.timer_callback)
 
     def timer_callback(self):
@@ -56,8 +54,8 @@ class ChassisController(Node):
 
     def controller_callback(self, msg):
 
-        self.controller_data['lx'] = msg.lx
-        self.controller_data['ly'] = msg.ly
+        self.controller_data['lx'] = msg.lx 
+        self.controller_data['ly'] = msg.ly 
         # self.get_logger().info(f"Speed data lx:{self.controller_data['lx']} ly:{self.controller_data['ly']}.")
 
     def can_callback(self, msg):
@@ -68,7 +66,7 @@ class ChassisController(Node):
         self.rotor_speeds = []
         if self.control_mode == 1:
             # 控制模式 1：直接使用遥控器输入
-            self.vx = -self.controller_data['lx'] / 660.0 * 20.0
+            self.vx = self.controller_data['lx'] / 660.0 * 20.0
             self.vy = self.controller_data['ly'] / 660.0 * 20.0
         
        
@@ -85,8 +83,10 @@ class ChassisController(Node):
             output = pid_controller.calculate(target, feedback)
             self.outputs.append(output)
 
+        self.outputs = [float(max(min(output, 3.4e38), -3.4e38)) for output in self.outputs]
+
         msg = Pid()
-        msg.pid = self.outputs
+        msg.chassis_pid = self.outputs
         self.publisher.publish(msg)
         self.get_logger().info(f"Published PID {msg}")
         
@@ -96,19 +96,20 @@ class ChassisController(Node):
         计算麦克纳姆轮的目标速度
         :return: 每个电机的转速
         """
-        L = 0.5  # 轮间距（假设值）
-        W = 0.3  # 轮宽（假设值）
-        wheel_radius = 0.075
-        
+
+        wheel_radius = 13.16                 # 测量值, 麦克纳姆轮半径的倒数
+        chassis_motor_reduction_rate = 19.2  # 底盘电机减速比
+        chassis_size_k = 0.385               # 测量值, 机器人中心点到XY边缘的距离之和
+        coefficient = chassis_motor_reduction_rate * wheel_radius
+
         speeds = [
-            (vx - vy - vw * (L + W)) / wheel_radius,  # 左前
-            (vx + vy + vw * (L + W)) / wheel_radius,  # 左后
-            (vx + vy - vw * (L + W)) / wheel_radius,  # 右后
-            (vx - vy + vw * (L + W)) / wheel_radius   # 右前
+           -coefficient * (vy - vx + vw * chassis_size_k),   # 左前1
+           coefficient * (vy + vx - vw * chassis_size_k),   # 左后2
+           -coefficient * (vy - vx - vw * chassis_size_k),   # 右后3
+           coefficient * (vy + vx + vw * chassis_size_k)    # 右前4
         ]
         
-        # 限幅
-        max_speed = 800  # 假设最大速度 800 rad/s
+        max_speed = 800  # 800 rad/s
         speeds = [max(min(speed, max_speed), -max_speed) for speed in speeds]
         return speeds
     

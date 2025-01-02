@@ -45,15 +45,24 @@ struct Pid_
   }
 
   // field types and members
-  using _pid_type =
+  using _chassis_pid_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _pid_type pid;
+  _chassis_pid_type chassis_pid;
+  using _gimbal_pid_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _gimbal_pid_type gimbal_pid;
 
   // setters for named parameter idiom
-  Type & set__pid(
+  Type & set__chassis_pid(
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
-    this->pid = _arg;
+    this->chassis_pid = _arg;
+    return *this;
+  }
+  Type & set__gimbal_pid(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
+  {
+    this->gimbal_pid = _arg;
     return *this;
   }
 
@@ -99,7 +108,10 @@ struct Pid_
   // comparison operators
   bool operator==(const Pid_ & other) const
   {
-    if (this->pid != other.pid) {
+    if (this->chassis_pid != other.chassis_pid) {
+      return false;
+    }
+    if (this->gimbal_pid != other.gimbal_pid) {
       return false;
     }
     return true;

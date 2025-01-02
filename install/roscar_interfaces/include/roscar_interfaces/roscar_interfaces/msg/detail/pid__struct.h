@@ -18,13 +18,15 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'pid'
+// Member 'chassis_pid'
+// Member 'gimbal_pid'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Pid in the package roscar_interfaces.
 typedef struct roscar_interfaces__msg__Pid
 {
-  rosidl_runtime_c__float__Sequence pid;
+  rosidl_runtime_c__float__Sequence chassis_pid;
+  rosidl_runtime_c__float__Sequence gimbal_pid;
 } roscar_interfaces__msg__Pid;
 
 // Struct for a sequence of roscar_interfaces__msg__Pid.
