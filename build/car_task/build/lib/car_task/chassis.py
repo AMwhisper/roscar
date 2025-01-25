@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 import math
 from car_task.PID import PIDController
+from car_task.vegmath import vegsin, vegcos
 from roscar_interfaces.msg import Controller, Can, Pid
 
 class ChassisController(Node):
@@ -60,58 +61,71 @@ class ChassisController(Node):
 
     def can_callback(self, msg):
         self.can_data['can'] = msg.can
+
     
     def update_chassis(self):
   
         self.rotor_speeds = []
         if self.control_mode == 1:
             # 控制模式 1：直接使用遥控器输入
-            self.vx = self.controller_data['lx'] / 660.0 * 20.0
-            self.vy = self.controller_data['ly'] / 660.0 * 20.0
-        
+            self.vx = self.map_range(self.controller_data['lx'], 0, 255, 100, -100, 110, 140, 127.5) / 660.0 * 20.0
+            self.vy = self.map_range(self.controller_data['ly'], 0, 255, 100, -100, 110, 140, 127.5) / 660.0 * 20.0
+            # self.get_logger().info(f"vx{self.vx}, vy{self.vy}")
        
         self.rotor_speeds = self.calculate_mecanum_speeds(self.vx, self.vy, self.vw)
         return self.rotor_speeds
-    
+
+    def map_range(self, input_val, in_min, in_max, out_min, out_max, deadzone_min, deadzone_max, deadzone_val):
+        if deadzone_min <= input_val <= deadzone_max:
+            input_val = deadzone_val
+
+        return (input_val - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+        
+
+    def calculate_mecanum_speeds(self, vx, vy, vw):
+        # sin_yaw = vegsin(0)  # 1
+        # cos_yaw = vegcos(0)  # 0
+
+        # # 修正速度
+        # vx_fixed = vy * sin_yaw + vx * cos_yaw
+        # vy_fixed = vy * cos_yaw - vx * sin_yaw
+
+        # 麦克纳姆轮速度计算
+        wheel_radius = 13.16                 # 麦克纳姆轮半径
+        chassis_motor_reduction_rate = 19.2  # 电机减速比
+        chassis_size_k = 0.385               # 机器人中心点到XY边缘的距离之和
+        coefficient = chassis_motor_reduction_rate * wheel_radius
+
+        speeds = [
+            coefficient * (vy - vx - vw * chassis_size_k),   # 左前1
+            coefficient * (vy + vx - vw * chassis_size_k),   # 左后2
+            -coefficient * (vy - vx + vw * chassis_size_k),  # 右后3
+            -coefficient * (vy + vx + vw * chassis_size_k)   # 右前4
+        ]
+
+        # 限制速度范围
+        max_speed = 300  # 最大速度（单位：rad/s）
+        speeds = [max(min(speed, max_speed), -max_speed) for speed in speeds]
+        # self.get_logger().info(f"speeds {speeds}")
+        return speeds
+
+
     def calculate_pid_outputs(self):
         RPM2RPS = 2 * math.pi / 60
         self.outputs = []
-       
         for i, pid_controller in enumerate(self.pid_controllers):
             target = self.rotor_speeds[i]
             feedback = self.can_data['can'][i] * RPM2RPS
             output = pid_controller.calculate(target, feedback)
             self.outputs.append(output)
 
-        self.outputs = [float(max(min(output, 3.4e38), -3.4e38)) for output in self.outputs]
+        self.outputs = [float(round(max(min(output, 3.4e38), -3.4e38))) for output in self.outputs]
 
+    
         msg = Pid()
         msg.chassis_pid = self.outputs
         self.publisher.publish(msg)
         self.get_logger().info(f"Published PID {msg}")
-        
-    
-    def calculate_mecanum_speeds(self, vx, vy, vw):
-        """
-        计算麦克纳姆轮的目标速度
-        :return: 每个电机的转速
-        """
-
-        wheel_radius = 13.16                 # 测量值, 麦克纳姆轮半径的倒数
-        chassis_motor_reduction_rate = 19.2  # 底盘电机减速比
-        chassis_size_k = 0.385               # 测量值, 机器人中心点到XY边缘的距离之和
-        coefficient = chassis_motor_reduction_rate * wheel_radius
-
-        speeds = [
-           -coefficient * (vy - vx + vw * chassis_size_k),   # 左前1
-           coefficient * (vy + vx - vw * chassis_size_k),   # 左后2
-           -coefficient * (vy - vx - vw * chassis_size_k),   # 右后3
-           coefficient * (vy + vx + vw * chassis_size_k)    # 右前4
-        ]
-        
-        max_speed = 800  # 800 rad/s
-        speeds = [max(min(speed, max_speed), -max_speed) for speed in speeds]
-        return speeds
     
 def main(args=None):
     rclpy.init(args=args)

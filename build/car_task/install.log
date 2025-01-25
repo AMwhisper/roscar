@@ -1,9 +1,11 @@
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/PID.py
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/__init__.py
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/chassis.py
+/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/vegmath.py
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/__pycache__/PID.cpython-310.pyc
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/__pycache__/__init__.cpython-310.pyc
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/__pycache__/chassis.cpython-310.pyc
+/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/__pycache__/vegmath.cpython-310.pyc
 /home/amwhisper/ros/workspace/roscar/install/car_task/share/ament_index/resource_index/packages/car_task
 /home/amwhisper/ros/workspace/roscar/install/car_task/share/car_task/package.xml
 /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task-0.0.0-py3.10.egg-info/entry_points.txt

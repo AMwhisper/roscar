@@ -11,6 +11,7 @@ setup.py
 car_task/PID.py
 car_task/__init__.py
 car_task/chassis.py
+car_task/vegmath.py
 resource/car_task
 test/test_copyright.py
 test/test_flake8.py

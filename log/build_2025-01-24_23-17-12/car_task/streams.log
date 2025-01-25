@@ -1,0 +1,24 @@
+[0.905s] Invoking command in '/home/amwhisper/ros/workspace/roscar/src/car_task': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/car_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_task build --build-base /home/amwhisper/ros/workspace/roscar/build/car_task/build install --record /home/amwhisper/ros/workspace/roscar/build/car_task/install.log --single-version-externally-managed install_data
+[1.089s] running egg_info
+[1.089s] writing ../../build/car_task/car_task.egg-info/PKG-INFO
+[1.090s] writing dependency_links to ../../build/car_task/car_task.egg-info/dependency_links.txt
+[1.090s] writing entry points to ../../build/car_task/car_task.egg-info/entry_points.txt
+[1.090s] writing requirements to ../../build/car_task/car_task.egg-info/requires.txt
+[1.091s] writing top-level names to ../../build/car_task/car_task.egg-info/top_level.txt
+[1.092s] reading manifest file '../../build/car_task/car_task.egg-info/SOURCES.txt'
+[1.092s] writing manifest file '../../build/car_task/car_task.egg-info/SOURCES.txt'
+[1.093s] running build
+[1.093s] running build_py
+[1.093s] copying car_task/chassis.py -> /home/amwhisper/ros/workspace/roscar/build/car_task/build/lib/car_task
+[1.093s] running install
+[1.094s] running install_lib
+[1.095s] copying /home/amwhisper/ros/workspace/roscar/build/car_task/build/lib/car_task/chassis.py -> /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task
+[1.095s] byte-compiling /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task/chassis.py to chassis.cpython-310.pyc
+[1.097s] running install_data
+[1.097s] running install_egg_info
+[1.099s] removing '/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task-0.0.0-py3.10.egg-info' (and everything under it)
+[1.099s] Copying ../../build/car_task/car_task.egg-info to /home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages/car_task-0.0.0-py3.10.egg-info
+[1.102s] running install_scripts
+[1.119s] Installing chassis_node script to /home/amwhisper/ros/workspace/roscar/install/car_task/lib/car_task
+[1.119s] writing list of installed files to '/home/amwhisper/ros/workspace/roscar/build/car_task/install.log'
+[1.142s] Invoked command in '/home/amwhisper/ros/workspace/roscar/src/car_task' returned '0': PYTHONPATH=/home/amwhisper/ros/workspace/roscar/build/car_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/amwhisper/ros/workspace/roscar/install/car_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_task build --build-base /home/amwhisper/ros/workspace/roscar/build/car_task/build install --record /home/amwhisper/ros/workspace/roscar/build/car_task/install.log --single-version-externally-managed install_data

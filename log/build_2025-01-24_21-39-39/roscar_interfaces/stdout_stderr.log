@@ -1,0 +1,193 @@
+[  2%] Built target roscar_interfaces__cpp
+[ 12%] Built target roscar_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_roscar_interfaces
+[ 29%] Built target roscar_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 34%] Built target roscar_interfaces__rosidl_typesupport_cpp
+[ 44%] Built target roscar_interfaces__rosidl_typesupport_introspection_cpp
+[ 55%] Built target roscar_interfaces__rosidl_typesupport_c
+[ 65%] Built target roscar_interfaces__rosidl_typesupport_introspection_c
+[ 76%] Built target roscar_interfaces__rosidl_typesupport_fastrtps_c
+[ 76%] Built target roscar_interfaces
+[ 78%] Built target roscar_interfaces__py
+[ 87%] Built target roscar_interfaces__rosidl_generator_py
+[ 93%] Built target roscar_interfaces__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target roscar_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target roscar_interfaces__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing roscar_interfaces.egg-info/PKG-INFO
+writing dependency_links to roscar_interfaces.egg-info/dependency_links.txt
+writing top-level names to roscar_interfaces.egg-info/top_level.txt
+reading manifest file 'roscar_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'roscar_interfaces.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_roscar_interfaces_egg
+-- Install configuration: ""
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/ament_index/resource_index/rosidl_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/controller.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__functions.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__struct.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__type_support.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__type_support.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__functions.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__struct.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__functions.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__type_support.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__functions.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__struct.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__type_support.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__functions.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__struct.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__functions.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__functions.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__functions.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/can_control.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/can.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/pid.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/library_path.sh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/library_path.dsv
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_generator_c.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__type_support.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__type_support.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__type_support.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__type_support.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_c.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/controller.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__traits.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__builder.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__builder.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__traits.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__traits.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__builder.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__struct.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__traits.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__struct.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__builder.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__struct.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__struct.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/can.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/can_control.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/pid.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/dds_fastrtps
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/controller__type_support.cpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can_control__type_support.cpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/can__type_support.cpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/include/roscar_interfaces/roscar_interfaces/msg/detail/pid__type_support.cpp
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/pythonpath.sh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/pythonpath.dsv
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces-0.0.0-py3.10.egg-info
+-- Installing: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_c.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_controller.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_pid.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_can.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/__init__.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_can_control.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_can_control_s.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_controller_s.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_can_s.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg/_pid_s.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/__init__.py
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/libroscar_interfaces__rosidl_generator_py.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/_roscar_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+Listing '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces'...
+Listing '/home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/msg'...
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/local/lib/python3.10/dist-packages/roscar_interfaces/roscar_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/lib/libroscar_interfaces__rosidl_generator_py.so
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Controller.idl
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Can.idl
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Pid.idl
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Controller.msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Can.msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/msg/Pid.msg
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/ament_index/resource_index/package_run_dependencies/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/ament_index/resource_index/parent_prefix_path/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/ament_prefix_path.sh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/path.sh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/environment/path.dsv
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/local_setup.bash
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/local_setup.sh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/local_setup.zsh
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/local_setup.dsv
+-- Installing: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.dsv
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/ament_index/resource_index/packages/roscar_interfaces
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/export_roscar_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfacesConfig.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/cmake/roscar_interfacesConfig-version.cmake
+-- Up-to-date: /home/amwhisper/ros/workspace/roscar/install/roscar_interfaces/share/roscar_interfaces/package.xml
